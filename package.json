@@ -5,7 +5,7 @@
     "main": "dst/index.js",
     "repository": {
         "type": "git",
-        "url": ""
+        "url": "https://github.com/amir18160/node-typescript-starter.git"
     },
     "author": "Amir Hoori <amirhosseinhoori@gmail.com>",
     "license": "MIT",
