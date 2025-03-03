@@ -1,0 +1,174 @@
+################################################################
+# Git Attributes for Node.js/TypeScript Fullstack Project
+#
+# Functions:
+# 1. Enforce LF line endings for text files
+# 2. Optimize diff behavior for various file types
+# 3. Mark binary/non-diffable files
+# 4. Configure GitHub language detection
+# 5. Prevent merge conflicts in lockfiles
+#
+# Last Updated: 2025-04-03
+# Author: Amir Hoori
+################################################################
+
+
+# ========================
+# Core Line Ending Control
+# ========================
+* text=auto eol=lf
+
+# Text-based source files (LF normalization)
+*.js text diff=javascript
+*.ts text diff=typescript
+*.jsx text diff=jsx
+*.tsx text diff=tsx
+*.json text diff=json
+*.html text diff=html
+*.css text diff=css
+*.md text
+*.yml text
+*.yaml text
+*.txt text
+*.sh text eol=lf
+
+# ========================
+# Binary Files (No Processing)
+# ========================
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.svg binary
+*.woff binary
+*.woff2 binary
+*.ttf binary
+*.eot binary
+*.mp3 binary
+*.wav binary
+*.mp4 binary
+*.zip binary
+*.gz binary
+*.tar binary
+*.pdf binary
+
+# ========================
+# Source Code Metadata
+# ========================
+package-lock.json linguist-generated=true
+yarn.lock linguist-generated=true
+pnpm-lock.yaml linguist-generated=true
+*.min.js linguist-generated=true
+*.min.css linguist-generated=true
+
+# ========================
+# Vendored Dependencies
+# ========================
+node_modules/ linguist-vendored
+jspm_packages/ linguist-vendored
+bower_components/ linguist-vendored
+
+# ========================
+# Diff/Merge Strategies
+# ========================
+*.json diff=json
+package-lock.json diff=npm
+*.css diff=css
+*.html diff=html
+*.svg diff=image-svg
+*.graphql diff=graphql
+
+# Minified files should not be diffed
+*.min.js -diff
+*.min.css -diff
+
+# ========================
+# Configuration Files
+# ========================
+.env binary
+.env.* binary
+*.pem binary
+*.crt binary
+*.key binary
+
+# ========================
+# Documentation
+# ========================
+*.md diff=markdown
+CHANGELOG.md linguist-documentation
+LICENSE linguist-documentation
+
+# ========================
+# Test Artifacts
+# ========================
+*.snap -text
+coverage/ linguist-generated
+.nyc_output/ linguist-generated
+test-results.xml binary
+
+# ========================
+# Build Artifacts
+# ========================
+dist/ linguist-generated
+build/ linguist-generated
+out/ linguist-generated
+*.tsbuildinfo binary
+*.map binary
+
+# ========================
+# OS/Editor Files
+# ========================
+.DS_Store binary
+Thumbs.db binary
+.idea/ binary
+.vscode/ binary
+
+# ========================
+# Custom File Types
+# ========================
+# GraphQL schemas
+*.graphql text diff=graphql
+
+# Docker files
+Dockerfile text diff=docker
+docker-compose*.yml text diff=yaml
+
+# ========================
+# Logs & Temporary Files
+# ========================
+*.log binary
+npm-debug.log* binary
+yarn-error.log* binary
+*.tmp binary
+*.temp binary
+
+# ========================
+# SQL Databases
+# ========================
+*.db binary
+*.sqlite binary
+*.sql binary
+
+# ========================
+# GitHub Linguist Overrides
+# ========================
+# Force detection of TSX as TypeScript
+*.tsx linguist-language=TypeScript
+
+# Exclude generated files from language stats
+public/static/ linguist-vendored
+
+# ========================
+# Merge Strategies
+# ========================
+# Prevent merge conflicts in lockfiles
+package-lock.json merge=union
+yarn.lock merge=union
+
+# ========================
+# Export-ignore Patterns
+# ========================
+/.github export-ignore
+/scripts export-ignore
+/tests export-ignore

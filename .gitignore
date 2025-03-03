@@ -1,0 +1,215 @@
+### --- Operating System Files ---
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+.directory
+.trash-*
+*.swp
+*.swo
+*~
+
+### --- Editors & IDEs ---
+# VS Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/
+
+# JetBrains (WebStorm, IntelliJ)
+.idea/
+*.iml
+*.ipr
+*.iws
+modules.xml
+
+# Sublime Text
+*.sublime-workspace
+*.sublime-project
+
+### --- Node.js ---
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+.pnpm-store/
+
+# Package Manager Files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+shrinkwrap.yaml
+
+# Environment
+.env
+.env.local
+.env.*.local
+.env.development
+.env.production
+.env.test
+
+# Runtime
+*.pid
+*.seed
+*.pid.lock
+
+### --- TypeScript ---
+# Build artifacts
+dist/
+build/
+out/
+*.tsbuildinfo
+
+# Source maps
+*.js.map
+*.css.map
+
+### --- Testing ---
+# Coverage
+coverage/
+.nyc_output/
+
+# Jest
+jest-cache/
+jest-junit.xml
+
+# Mocha
+test-results.xml
+
+### --- Logs ---
+*.log
+logs/
+npm-logs.yaml
+yarn-metadata.json
+
+### --- Databases ---
+# SQLite
+*.sqlite
+*.sqlite3
+*.db
+*.db-journal
+
+# MongoDB
+/data/
+mongod.log
+
+### --- Build Tools ---
+# Webpack
+.webpack/
+.stats.json
+
+# Babel
+.babel-cache/
+
+# Parcel
+.cache/
+.parcel-cache/
+
+# Rollup
+rollup.config-*.js
+
+### --- Express Specific ---
+# Session files
+sessions/
+*.sess
+
+# Uploads
+uploads/
+temp/
+
+### --- Frontend Assets ---
+# Bundled assets
+public/build/
+public/assets/
+static/
+
+# CSS Preprocessors
+.sass-cache/
+.css.map
+
+### --- Dependency Directories ---
+jspm_packages/
+.bower-cache/
+.bower-components/
+.bower-rc
+
+### --- Security ---
+# Certificates & Keys
+*.key
+*.pem
+*.crt
+*.csr
+*.pub
+
+### --- Containers ---
+# Docker
+docker-compose.override.yml
+.dockerignore
+Dockerfile.dev
+
+# Kubernetes
+kubeconfig.yaml
+
+### --- CI/CD ---
+.circleci/
+.travis.yml
+.gitlab-ci.yml
+.azure-pipelines/
+
+### --- Misc ---
+# Debug
+debug/
+*.exe
+*.dll
+*.so
+*.out
+
+# Archives
+*.7z
+*.dmg
+*.gz
+*.iso
+*.rar
+*.tar
+*.zip
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.backup
+*.orig
+
+### --- Framework Specific ---
+# Next.js
+.next/
+out/
+
+# Nuxt.js
+.nuxt/
+.nuxt-properties
+
+# Angular
+.angular/
+aot/
+
+# React
+.craco/
+.react-email/
+
+### --- Cache Directories ---
+.eslintcache
+.prettiercache
+.stylelintcache
