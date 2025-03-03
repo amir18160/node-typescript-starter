@@ -10,11 +10,12 @@
 
 ## 🌟 Features
 
-- **Beginner Friendly** 🔒
+- **Beginner Friendly** 🙂
   - Everything is Clear For You if You are in Learning Stage
 - **Developer Experience** 🛠️
   - ESLint + Prettier
-- **Skip Redundancy** 🛠️
+  - gitattributes and gitignore fully setup
+- **Skip Redundancy** ☹
   - No Mood for Creating a New Project? No Worries
 
 ## 🛠️ Tech Stack
