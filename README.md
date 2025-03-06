@@ -13,7 +13,9 @@
 - **Beginner Friendly** 🙂
   - Everything is Clear For You if You are in Learning Stage
 - **Developer Experience** 🛠️
-  - ESLint + Prettier
+  - ESLint + Prettier setup
+  - Typescript setup 
+  - Babel Setup
   - gitattributes and gitignore fully setup
 - **Skip Redundancy** ☹
   - No Mood for Creating a New Project? No Worries
@@ -24,7 +26,7 @@
 | ----------- | -------------------------------------------------------- |
 | **Core**    | Node.js 18+, TypeScript 5.x, ESLint 8.x                  |
 | **ESLint**  | airbnb-base, airbnb-typescript, typescript-eslint & more |
-| **Tooling** | ESLint, PM2, Prettier, Editorconfig                      |
+| **Tooling** | ESLint, PM2, Prettier, Editorconfig, Babel               |
 
 ## ⚡ Quick Start
 
